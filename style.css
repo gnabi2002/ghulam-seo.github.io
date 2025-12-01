@@ -33,7 +33,7 @@ footer {
   padding: 1rem;
 }
 /* Blogs Page Styling */
-.blogs-page main {
+/*.blogs-page main {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
@@ -141,7 +141,7 @@ footer {
   color: #666;
 }
 /* Contact Page Styling */
-.contact-page main {
+/*.contact-page main {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
