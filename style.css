@@ -1,4 +1,4 @@
-*
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -140,3 +140,94 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+/* Contact Page Styling */
+.contact-page main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Headings */
+.contact-page h1 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #0078d7; /* Accent line */
+  padding-bottom: 0.5rem;
+}
+
+.contact-page h2 {
+  font-size: 1.5rem;
+  color: #0078d7;
+  margin-top: 2rem;
+}
+
+/* Contact Form */
+.contact-page #contact-form form {
+  background: #fdfdfd;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.contact-page label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.contact-page input,
+.contact-page textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus {
+  border-color: #0078d7;
+  outline: none;
+}
+
+/* Submit Button */
+.contact-page button {
+  background: #0078d7;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-page button:hover {
+  background: #005a9e;
+}
+
+/* Footer */
+.contact-page footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.contact-page footer a {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+.contact-page footer a:hover {
+  text-decoration: underline;
+}
+
