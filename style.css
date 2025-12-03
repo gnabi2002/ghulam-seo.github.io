@@ -43,7 +43,7 @@ footer {
 }
 
 /* Headings */
-.blogs-page h1, 
+.blogs-page h2, 
 .blogs-page h2, 
 .blogs-page h3 {
   color: #222;
@@ -151,7 +151,7 @@ footer {
 }
 
 /* Headings */
-.contact-page h1 {
+/*.contact-page h1 {
   font-size: 2rem;
   color: #222;
   margin-bottom: 1rem;
