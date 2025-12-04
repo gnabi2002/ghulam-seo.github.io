@@ -93,11 +93,25 @@ nav a {
 
       .nav-links.active {
         max-height: 300px; /* expand smoothly */
+
       }
 
       .hamburger {
         display: flex; /* hamburger visible only on mobile/tablet */
       }
+      /* Animate hamburger into X when active */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0; /* middle line disappears */
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
     }
   
 
