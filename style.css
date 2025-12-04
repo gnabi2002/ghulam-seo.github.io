@@ -15,9 +15,9 @@ header {
 }
 
 nav a {
-  color: #fff;
+  color: #345e6b;
   margin: 0 10px;
-  text-decoration: none;
+  text-decoration:none;
 }
 
  .navbar {
@@ -112,7 +112,7 @@ footer {
   padding: 1rem;
 }
 /* Blogs Page Styling */
-/*.blogs-page main {
+.blogs-page main {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
