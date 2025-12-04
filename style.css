@@ -1,10 +1,11 @@
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  scroll-behavior: smooth;
 }
 
 header {
@@ -19,9 +20,86 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
+ .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      padding: 10px 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Logo */
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #0077ff;
+    }
+
+    /* Links (desktop default) */
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly; /* spread evenly */
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #0077ff;
+      transform: scale(1.1);
+    }
+
+    /* Hamburger hidden by default */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background: #333;
+      transition: all 0.3s ease;
+    }
+
+    /* Mobile view only */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background: #fff;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        max-height: 0; /* collapsed by default */
+        overflow: hidden;
+        transition: max-height 0.5s ease; /* slide down effect */
+      }
+
+      .nav-links.active {
+        max-height: 300px; /* expand smoothly */
+      }
+
+      .hamburger {
+        display: flex; /* hamburger visible only on mobile/tablet */
+      }
+    }
+  
 
 main {
   padding: 2rem;
