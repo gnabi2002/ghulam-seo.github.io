@@ -36,7 +36,7 @@ nav a {
     /* Logo */
   /* Logo base styling */
 .logo img {
-  height: 10px;        /* Default size for desktop */
+  height: 300px;        /* Default size for desktop */
   width: auto;         /* Keeps aspect ratio */
   max-width: 100%;     /* Prevents overflow */
   vertical-align: middle;
