@@ -34,11 +34,17 @@ nav a {
     }
 
     /* Logo */
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #0077ff;
-    }
+   .logo img {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
 
     /* Links (desktop default) */
     .nav-links {
