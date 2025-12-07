@@ -37,13 +37,14 @@ color: #555555;
       top: 0;
       z-index: 1000;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
     }
 
     /* Logo */
   /* Logo base styling */
 .logo img {
   color: #009688;
-  height: 3rem;        /* Default size for desktop */
+  height: 1rem;        /* Default size for desktop */
   width: fit-content;         /* Keeps aspect ratio */
   max-width: 100%;     /* Prevents overflow */
   vertical-align: middle;
