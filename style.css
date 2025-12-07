@@ -43,8 +43,8 @@ color: #555555;
     /* Logo */
   /* Logo base styling */
 .logo img {
-  color: #009688;
-  height: 1rem;        /* Default size for desktop */
+  color: #222222;
+  height: 3rem;        /* Default size for desktop */
   width: fit-content;         /* Keeps aspect ratio */
   max-width: 100%;     /* Prevents overflow */
   vertical-align: middle;
