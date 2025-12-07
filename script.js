@@ -1,19 +1,10 @@
-// script.js
-<script>
-  const toggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.nav-links');
-  const icon = toggle.querySelector('i');
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
 
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-
-    // Switch icon between hamburger and X
-    if (nav.classList.contains('active')) {
-      icon.classList.remove('fa-bars');
-      icon.classList.add('fa-times');
-    } else {
-      icon.classList.remove('fa-times');
-      icon.classList.add('fa-bars');
-    }
+  // Toggle menu + animate hamburger
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");   // slide down menu
+    hamburger.classList.toggle("active");  // animate into X
   });
-</script>
+});
