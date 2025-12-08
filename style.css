@@ -195,8 +195,8 @@ main {
   transition: box-shadow 0.3s ease;
 }
 .blogs-page image{
-max-width: fit-content;
-max-height: 30rem;
+max-width: fit-screen;
+max-height: auto;
 }
 
 .blogs-page article:hover {
