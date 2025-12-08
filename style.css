@@ -151,7 +151,7 @@ main {
 
 /* Blogs Page Styling */
 .blogs-page main {
-  max-width: 900px;
+  max-width: auto;
   margin: 0 auto;
   padding: 2rem;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -193,6 +193,10 @@ main {
   padding: 1rem;
   margin-bottom: 1.5rem;
   transition: box-shadow 0.3s ease;
+}
+.blogs-page image{
+max-width: fit-content;
+max-height: 30rem;
 }
 
 .blogs-page article:hover {
