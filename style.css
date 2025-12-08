@@ -43,7 +43,7 @@ color: #555555;
   /* Logo base styling */
 .logo img {
   color: #009688;
-  height: 3rem;        /* Default size for desktop */
+  height: 5rem;        /* Default size for desktop */
   width: fit-content;         /* Keeps aspect ratio */
   max-width: 100%;     /* Prevents overflow */
   vertical-align: middle;
@@ -197,6 +197,7 @@ main {
 .blogs-page image {
 max-width: 100%;
 height: auto;
+display: block;
 }
 
 .blogs-page article:hover {
