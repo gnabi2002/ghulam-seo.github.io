@@ -74,35 +74,20 @@
   </style>
 </head>
 <body>
-  <header>
-     <nav class="navbar">
-<div><a href="index.html" class="logo">
-    <img src="images/logo.png" alt="Ghulam Logo" loading="lazy" /></a></div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
-  </header>
   <canvas id="confetti"></canvas>
   <div class="invitation" id="invitationBox">
-    <h1>🎉 You're Invited! 🎉</h1>
+    <h1>🎉 You're Invited by GHULAM NABI! 🎉</h1>
     <p>Join us for an unforgettable party full of fun, music, and laughter!</p>
-    <p><strong>Date:</strong> Friday, December 20th</p>
-    <p><strong>Time:</strong> 7:00 PM</p>
-    <p><strong>Location:</strong> My Place</p>
+    <p><strong>Date:</strong> Friday, December 12th</p>
+    <p><strong>Time:</strong> 7:30 PM</p>
+    <p><strong>Location:</strong> Nesto Building first floor Room No-101</p>
 
-    <input type="text" id="nameInput" placeholder="Enter your name">
-    <button onclick="generateInvitation()">Get My Invitation</button>
-    <button onclick="downloadInvitation()">Download My Invitation 🎁</button>
+   <input type="text" id="nameInput" placeholder="Enter your name">
+<button id="inviteBtn" onclick="generateInvitation(event)">Get My Invitation</button>
+
+<!-- Hidden by default -->
+<button id="downloadBtn" style="display:none;" onclick="downloadInvitation()">Download My Invitation 🎁</button>
+<button id="rsvpBtn" style="display:none;" onclick="window.location.href='https://forms.gle/yourRSVPform'">RSVP Now ✅</button>
 
     <div class="message" id="customMessage"></div>
     <div class="countdown" id="countdown"></div>
@@ -120,16 +105,31 @@
 
   <script>
     // Personalized message
-    function generateInvitation() {
-      const name = document.getElementById('nameInput').value;
-      const messageDiv = document.getElementById('customMessage');
-      if(name.trim() !== "") {
-        messageDiv.innerHTML = `Dear <span style="color:#ff6f91">${name}</span>, we can’t wait to see you at the party! 🎊`;
-        launchConfetti();
-      } else {
-        messageDiv.innerHTML = "Please enter your name to personalize your invitation.";
-      }
-    }
+    function generateInvitation(event) {
+  const nameInput = document.getElementById('nameInput');
+  const inviteBtn = document.getElementById('inviteBtn');
+  const downloadBtn = document.getElementById('downloadBtn');
+  const rsvpBtn = document.getElementById('rsvpBtn');
+  const messageDiv = document.getElementById('customMessage');
+
+  if(nameInput.value.trim() !== "") {
+    messageDiv.innerHTML = `Dear <span style="color:#ff6f91">${nameInput.value}</span>, we can’t wait to see you at the party! 🎊`;
+
+    // Hide input and "Get My Invitation" button
+    nameInput.style.display = "none";
+    inviteBtn.style.display = "none";
+
+    // Show the download + RSVP buttons
+    downloadBtn.style.display = "inline-block";
+    rsvpBtn.style.display = "inline-block";
+
+    // Launch confetti
+    launchConfetti();
+  } else {
+    messageDiv.innerHTML = "Please enter your name to personalize your invitation.";
+  }
+}
+
 
     // PDF download
     function downloadInvitation() {
