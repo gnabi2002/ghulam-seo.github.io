@@ -13,7 +13,10 @@ background-color: #d3d7da;
     max-width: 100vw;   /* never wider than viewport */
   }
 }
-
+image{
+  border: #2e2c2ce7;
+  max-width: 100vw;
+}
 
 header {
 
